@@ -12,7 +12,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
 
 
-os.environ["GOOGLE_API_KEY"] ="AIzaSyCewBhcR00_HKv3B1JXUFJ8MbD-nR1COXQ"
+os.environ["GOOGLE_API_KEY"] =""
 
 load_dotenv()
 
@@ -220,3 +220,4 @@ if st.button("Explain This Course"):
                 st.write(answer)
             except Exception as e:
                 st.error(f"Gemini explanation error: {e}")
+
